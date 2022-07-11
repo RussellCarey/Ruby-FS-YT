@@ -5,7 +5,7 @@
   </p>
 
   <p><%= post.views%> views</p>
-    <p>Posted by <%= post.user.email%></p>
+    <p>Posted by <%= link_to post.user.name, user_path(post.user)%></p>
 
   <p>
     <strong>Body:</strong>
